@@ -98,6 +98,7 @@ func _create_material(mat_name: String, textures: Dictionary) -> void:
 						mat.ao_texture = tex
 					"height_texture":
 						mat.heightmap_enabled = true
+						mat.heightmap_scale = 1.0 # Defaults to 5.0 for some reason
 						mat.heightmap_texture = tex
 					"albedo_texture":
 						mat.albedo_texture = tex
